@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/newsFragment">
+
+    <fragment
+        android:id="@+id/topHeadlinesFragment"
+        android:name="com.example.newsapp.ui.top_headlines.TopHeadlinesFragment"
+        android:label="Top Headlines" >
+        <action
+            android:id="@+id/to_articleDetailsFragment"
+            app:destination="@id/articleDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleDetailsFragment"
+        android:name="com.example.newsapp.ui.article_details.ArticleDetailsFragment"
+        android:label="Article Details" >
+        <argument
+            android:name="url"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookmarksFragment"
+        android:name="com.example.newsapp.ui.bookmarks.BookmarksFragment"
+        android:label="Bookmarks">
+        <action
+            android:id="@+id/to_articleDetailsFragment"
+            app:destination="@id/articleDetailsFragment" />
+    </fragment>
+    <action android:id="@+id/to_bookmarksFragment" app:destination="@id/bookmarksFragment" />
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.example.newsapp.ui.NewsFragment"
+        android:label="NewsFragment" >
+        <action
+            android:id="@+id/to_articleDetailsFragment"
+            app:destination="@id/articleDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/everythingFragment"
+        android:name="com.example.newsapp.ui.everything.EverythingFragment"
+        android:label="EverythingFragment" >
+        <action
+            android:id="@+id/to_articleDetailsFragment"
+            app:destination="@id/articleDetailsFragment" />
+    </fragment>
+</navigation>
