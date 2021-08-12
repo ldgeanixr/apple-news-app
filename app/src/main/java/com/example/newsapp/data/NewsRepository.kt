@@ -6,6 +6,7 @@ import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.liveData
 import com.example.newsapp.api.NewsAPI
+import com.example.newsapp.data.db.ArticlesDao
 import com.example.newsapp.data.models.Article
 import com.example.newsapp.utils.Const
 

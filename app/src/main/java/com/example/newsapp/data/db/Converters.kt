@@ -1,4 +1,4 @@
-package com.example.newsapp.data
+package com.example.newsapp.data.db
 
 import androidx.room.TypeConverter
 import java.util.*
